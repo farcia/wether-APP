@@ -6,5 +6,5 @@ export default {
     componet: Weather
 }
 
-
-export const WeatherStory = () => (<Weather temperature={10} />)
+export const WeatherCloud = () => (<Weather temperature={12} state="cloud" />)
+export const WeatherSunny = () => (<Weather temperature={10} state="sunny" />)
