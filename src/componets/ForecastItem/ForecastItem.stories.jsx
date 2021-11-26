@@ -2,7 +2,7 @@ import React from "react";
 import ForecastItem from "./ForecastItem";
 
 export default {
-    title: "Forecas Item",
+    title: "Forecast Item",
     componet: ForecastItem
 }
 
