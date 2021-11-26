@@ -13,7 +13,7 @@ const renderCityAndCountry = eventOnClickCity => cityAndCountry => {
                     <CityInfo city={city} country={country}/>
                 </Grid>
                 <Grid item sm={4} xs={12}>
-                <Weather temperature={10} state="sunny" />
+                    <Weather temperature={10} state="sunny" />
                 </Grid>
             </Grid>
         </li>

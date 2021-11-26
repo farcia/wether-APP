@@ -6,26 +6,30 @@ import MainPage from './pages/MainPage'
 import CityPage from './pages/CityPage'
 import Error404 from './pages/Error404'
 
+import Grid from '@material-ui/core/Grid'
+
 const App = () => {
     return (
-        <section>
-            <Ruter>
-                <Switch>
-                    <Route exact path="/">
-                        <WelcomePage />
-                    </Route>
-                    <Route exact path="/Main">
-                        <MainPage />
-                    </Route>
-                    <Route exact path="/City">
-                        <CityPage />
-                    </Route>
-                    <Route>
-                        <Error404 />
-                    </Route>
-                </Switch>
-            </Ruter>
-        </section >
+        <Grid container justifyContent='center' direction='row'>
+            <Grid item sm={10}>
+                <Ruter>
+                    <Switch>
+                        <Route exact path="/">
+                            <WelcomePage />
+                        </Route>
+                        <Route exact path="/Main">
+                            <MainPage />
+                        </Route>
+                        <Route exact path="/City">
+                            <CityPage />
+                        </Route>
+                        <Route>
+                            <Error404 />
+                        </Route>
+                    </Switch>
+                </Ruter>
+            </Grid>
+        </Grid >
     )
 }
 

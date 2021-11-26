@@ -6,7 +6,7 @@ const WelcomePage = () => {
         <section className='sectionGeneral'>
             <h1>Welcome</h1>
             <div>
-                <Link to="/Main">Ir a main</Link>
+                <Link to="/Main" className='btnGeneral' >Ir a main</Link>
             </div>
         </section>
     )
