@@ -28,7 +28,6 @@ Normalizer
     line-height: 1.1;
     vertical-align: baseline;
     box-sizing: border-box;
-    font-size: 0;
     color:var(--dark);}
 br {font-size: 1em;}  
 body, html{
@@ -78,9 +77,11 @@ h4:nth-last-child(1), h5:nth-last-child(1), h6:nth-last-child(1), .subTitle {
     }
 }
 
-.dark p, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark label, .dark input, .dark select, .dark textarea, .dark a, .dark span, .dark button, .dark li, .dark b, .dark i {
-    color: var(--light)
-}
-.light p, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light label, .light input, .light a, .light span, .light li{
-    color: var(--dark)
+.sectionGeneral {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }

@@ -1,11 +1,31 @@
 import React from 'react'
 import './App.css'
+import { BrowserRouter as Ruter, Switch, Route } from 'react-router-dom'
+import WelcomePage from './pages/WelcomePage'
+import MainPage from './pages/MainPage'
+import CityPage from './pages/CityPage'
+import Error404 from './pages/Error404'
 
 const App = () => {
     return (
-        <h1>
-            Hola mundo
-        </h1>
+        <section>
+            <Ruter>
+                <Switch>
+                    <Route exact path="/">
+                        <WelcomePage />
+                    </Route>
+                    <Route exact path="/Main">
+                        <MainPage />
+                    </Route>
+                    <Route exact path="/City">
+                        <CityPage />
+                    </Route>
+                    <Route>
+                        <Error404 />
+                    </Route>
+                </Switch>
+            </Ruter>
+        </section >
     )
 }
 
