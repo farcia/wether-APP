@@ -6,6 +6,7 @@ import WeatherDetails from './../componets/WeatherDetails'
 import ForecastChart from './../componets/ForecastChart'
 import Forecast from './../componets/Forecast'
 import { Link } from 'react-router-dom'
+import AppFrame from './../componets/AppFrame/'
 
 const CityPage = () => {
     const city = "Buenos Aires"
@@ -31,42 +32,41 @@ const CityPage = () => {
         {'dayHour': 'Mar 18', 'min': 12, 'max': 19},
     ]
     return (
-        <Grid 
-            content 
-            justify="space-around" 
-            aligItem="center" 
-            direction='column' 
-            spacing={2} className="gridContentAll">
+        <AppFrame>
             <Grid 
-                item 
-                container 
-                xs={12} 
-                justify="center" 
-                aligItem="flex-end">
-                <CityInfo city={city} country={country} />
+                content 
+                justify="space-around" 
+                aligItem="center" 
+                direction='column' 
+                spacing={2} className="gridContentAll">
+                <Grid 
+                    item 
+                    container 
+                    xs={12} 
+                    justify="center" 
+                    aligItem="flex-end">
+                    <CityInfo city={city} country={country} />
+                </Grid>
+                <Grid 
+                    container 
+                    xs={12} 
+                    justifyContent="center" 
+                    alignItems="center">
+                    <Weather temperature={temperature} state={state} />
+                    <WeatherDetails humidity={humidity} wind={wind} />
+                </Grid>
+                <Grid 
+                    item 
+                    xs={12}>
+                    <ForecastChart data={data}></ForecastChart>
+                </Grid>
+                <Grid   
+                    item 
+                    xs={12}>
+                    <Forecast forecastItemList={forecastItemList}></Forecast>
+                </Grid>
             </Grid>
-            <Grid 
-                container 
-                xs={12} 
-                justifyContent="center" 
-                alignItems="center">
-                <Weather temperature={temperature} state={state} />
-                <WeatherDetails humidity={humidity} wind={wind} />
-            </Grid>
-            <Grid 
-                item 
-                xs={12}>
-                <ForecastChart data={data}></ForecastChart>
-            </Grid>
-            <Grid   
-                item 
-                xs={12}>
-                <Forecast forecastItemList={forecastItemList}></Forecast>
-            </Grid>
-            <Grid item container justifyContent='center' alignItems='center'>
-                <Link to="/Main" className='btnGeneral'>Volver al main</Link>
-            </Grid>
-        </Grid>
+        </AppFrame>
     )
 }
 

@@ -27,8 +27,7 @@ Normalizer
     border-width: 0;
     line-height: 1.1;
     vertical-align: baseline;
-    box-sizing: border-box;
-    color:var(--dark);}
+    box-sizing: border-box;}
 br {font-size: 1em;}  
 body, html{
     width: 100%; 
@@ -41,41 +40,7 @@ body, html{
 html {-webkit-text-size-adjust: 100%;}  div, section{position: relative; z-index: 1;}  hr {box-sizing: content-box; height: 0; overflow: visible;}  pre {font-family: monospace, monospace; font-size: 1em; }  a {background-color: transparent;text-decoration: none;display: block;}  abbr[title] {border-bottom: none; text-decoration: underline;}  b, strong {font-weight: 800;font-size: 1em}  code, kbd, samp {font-family: monospace, monospace; font-size: 1em; }  small {font-size: 80%;line-height: 0}  sub, sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}  sub {bottom: -0.25em;}  sup {top: -0.5em;}  img {border-style: none;}  button, input, optgroup, select, textarea {font-family: inherit;font-size: 90%;margin: 0; background: transparent;}  label, span {display: block;position: relative;}  button, input {overflow: visible; display: block;position: relative;}  button, select {text-transform: none;}  button, [type="button"], [type="reset"], [type="submit"] {-webkit-appearance: button;}  button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {border-style: none;padding: 0;}  button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {outline: 1px dotted ButtonText;}  fieldset {padding: 0.35em 0.75em 0.625em;}  legend {box-sizing: border-box; color: inherit; display: table; max-width: 100%; padding: 0;white-space: normal;}  progress {vertical-align: baseline;}  textarea {overflow: auto;}  [type="checkbox"], [type="radio"] {box-sizing: border-box; padding: 0; height: 0; width: 0;visibility: hidden; position: absolute;}  [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {height: auto;}  [type="search"] {-webkit-appearance: textfield;outline-offset: -2px;}  [type="search"]::-webkit-search-decoration {-webkit-appearance: none;}  ::-webkit-file-upload-button {-webkit-appearance: button;font: inherit;}  details {display: block;}  summary {display: list-item;}  template {display: none;}  [hidden] {display: none;}  div.displayFlexFullS{width: 100%;min-height: 100vh;}
 
 /*Compositor*/
-header {height: var(--headerH);z-index: 200;position: relative}
-footer {z-index: 100;}
-a, button {font-size: var(--fontSizenP);}
-h1 {font-size: calc(var(--fontSizenP) * 2.4);font-weight: 800;}
-h2 {font-size: calc(var(--fontSizenP) * 2.5);line-height: 1.3;margin-bottom: 1vw;}
-h3 {font-size: calc(var(--fontSizenP) * 2.4);font-weight: 500;margin-bottom: 1vw;line-height: 1.4;}
-h4 {font-size: calc(var(--fontSizenP) * 1.9);line-height: 1.2;}
-h5, .subTitle {font-size: calc(var(--fontSizenP) * 1);font-weight: 600; margin-bottom: 1vw;}
-h6 {font-size: calc(var(--fontSizenP) * 0.8);font-weight: 600;}
-p.p1,li, a, p{font-size: var(--fontSizenP);line-height: 1.6;font-weight: 500;}
-span {font-size: var(--fontSizenP);}
-label {font-size: var(--fontSizenP);}
-option {font-size: var(--fontSizenP);}
-p, h1, h2, h3, h4, h6 {
-    margin-bottom: 4vw;
-}
-p a {
-    font-size: 1em;
-    display: inline-block;
-}
-.title, .subTitle {text-transform: uppercase}
-p:nth-last-child(1), h1:nth-last-child(1), h2:nth-last-child(1), h3:nth-last-child(1),
-h4:nth-last-child(1), h5:nth-last-child(1), h6:nth-last-child(1), .subTitle {
-    margin-bottom: 0;
-}
-@media only screen and (min-width: 768px) {
-    p, h1, h2, h3, h4, h6 {
-        margin-bottom: 3vw;
-    }
-}
-@media only screen and (min-width: 1419px) {
-    p, h1, h2, h3, h4, h6 {
-        margin-bottom: 2vw;
-    }
-}
+
 
 .sectionGeneral {
     display: flex;

@@ -1,7 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
 import CityList from './../componets/CityList'
+import AppFrame from './../componets/AppFrame/'
 
 const cities = [
     { city: "Buenos aires", country: "Argentina" },
@@ -17,14 +18,11 @@ const MainPage = () => {
         history.push('/City')
     }
     return (
-        <Grid content justify="center" aligItem="center">
-            <Grid>
-                <h4>Listados de ciudades</h4>
-            </Grid>
-            <Grid item>
+        <AppFrame>
+            <Paper elevation={4}>
                 <CityList cities={cities} onClickCity={onClickHandler} />
-            </Grid>
-        </Grid>
+            </Paper>
+        </AppFrame>
     )
 }
 
