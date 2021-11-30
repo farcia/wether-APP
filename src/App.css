@@ -100,3 +100,6 @@ h4:nth-last-child(1), h5:nth-last-child(1), h6:nth-last-child(1), .subTitle {
 .btnGeneral:hover {
     background: var(--dark);
 }
+.gridContentAll > div {
+    padding: 15px;
+}

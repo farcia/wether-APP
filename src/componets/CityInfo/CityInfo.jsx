@@ -6,7 +6,7 @@ const CityInfo = ({city, country}) => {
     return (
         <div>
             <Typography display="inline" variant="h4">{city}, </Typography>
-            <Typography  display="inline" variant="h4">{country}</Typography>
+            <Typography  display="inline" variant="h5">{country}</Typography>
         </div>
     )
 }

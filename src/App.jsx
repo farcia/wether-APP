@@ -11,7 +11,7 @@ import Grid from '@material-ui/core/Grid'
 const App = () => {
     return (
         <Grid container justifyContent='center' direction='row'>
-            <Grid item sm={10}>
+            <Grid item xs={12} sm={11} md={10} lg={8}>
                 <Ruter>
                     <Switch>
                         <Route exact path="/">

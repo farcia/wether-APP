@@ -1,22 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts'
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
 const ForecastChart = ({ data }) => {
     return (
-        <LineChart
-            height={250}
-            width={700}
-            margin={{ top: 30, bottom: 30, left: 5, right: 5, }}
-            data={data}>
-                <XAxis dataKey="dayHour" />
-                <YAxis />
-                <CartesianGrid />
-                <Tooltip />
-                <Legend />
-                <Line tipe="monotine" dataKey="max" stroke="#d50000" />
-                <Line tipe="monotine" dataKey="min" stroke="#0000d5" />
-        </LineChart>
+        <ResponsiveContainer 
+        height={250}
+        width={'100%'}>
+            <LineChart
+                margin={{ top: 30, bottom: 30, left: 5, right: 5, }}
+                data={data}>
+                    <XAxis dataKey="dayHour" />
+                    <YAxis />
+                    <CartesianGrid />
+                    <Tooltip />
+                    <Legend />
+                    <Line tipe="monotine" dataKey="max" stroke="#d50000" />
+                    <Line tipe="monotine" dataKey="min" stroke="#0000d5" />
+            </LineChart>
+        </ResponsiveContainer>
     )
 }
 

@@ -31,27 +31,41 @@ const CityPage = () => {
         {'dayHour': 'Mar 18', 'min': 12, 'max': 19},
     ]
     return (
-        <Grid content justify="center" aligItem="center" direction='column'>
-            <Grid item xs={12}>
+        <Grid 
+            content 
+            justify="space-around" 
+            aligItem="center" 
+            direction='column' 
+            spacing={2} className="gridContentAll">
+            <Grid 
+                item 
+                container 
+                xs={12} 
+                justify="center" 
+                aligItem="flex-end">
                 <CityInfo city={city} country={country} />
             </Grid>
-            <Grid container xs={12} justifyContent="center" alignItems="center">
-                <Grid item xs={8}>
-                    <Weather temperature={temperature} state={state} />
-                </Grid>
-                <Grid item xs={4}>
-                    <WeatherDetails humidity={humidity} wind={wind} />
-                </Grid>
+            <Grid 
+                container 
+                xs={12} 
+                justifyContent="center" 
+                alignItems="center">
+                <Weather temperature={temperature} state={state} />
+                <WeatherDetails humidity={humidity} wind={wind} />
             </Grid>
-            <Grid item xs={12}>
+            <Grid 
+                item 
+                xs={12}>
                 <ForecastChart data={data}></ForecastChart>
             </Grid>
-            <Grid item xs={12}>
+            <Grid   
+                item 
+                xs={12}>
                 <Forecast forecastItemList={forecastItemList}></Forecast>
             </Grid>
-            <div>
+            <Grid item container justifyContent='center' alignItems='center'>
                 <Link to="/Main" className='btnGeneral'>Volver al main</Link>
-            </div>
+            </Grid>
         </Grid>
     )
 }

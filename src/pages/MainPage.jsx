@@ -19,7 +19,7 @@ const MainPage = () => {
     return (
         <Grid content justify="center" aligItem="center">
             <Grid>
-                <h1>Listados de ciudades</h1>
+                <h4>Listados de ciudades</h4>
             </Grid>
             <Grid item>
                 <CityList cities={cities} onClickCity={onClickHandler} />
