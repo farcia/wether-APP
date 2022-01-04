@@ -4,13 +4,13 @@ import CityList from './CityList'
 import '@testing-library/jest-dom/extend-expect'
 
 const cities = [
-    { city: "Buenos aires", country: "Argentina" },
-    { city: "Caracas", country: "Venezuela"} ,
-    { city: "Bogotá", country: "Colombia" },
-    { city: "Lima", country: "Perú" }
+    { city: "Buenos Aires", country: "Argentina", countryCode: "AR"},
+    { city: "Caracas", country: "Venezuela", countryCode: "VE"} ,
+    { city: "Bogotá", country: "Colombia", countryCode: "CO"},
+    { city: "Ciudad de México", country: "México", countryCode: "MX"}
 ]
 test("CityList renders", async () => {
-    const { findAllByRole } = render(<CityList cities={cities}/>)
+    const { findAllByRole } = render(<CityList cities={cities} onClickCity={()=>{}}/>)
 
     const items = await findAllByRole("button")
 

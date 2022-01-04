@@ -39,15 +39,12 @@ const CityList = ({ cities, onClickCity }) => {
             axios.get(url).then(response => {
                 const { data } = response
                 const temperature = data.main.temp
-                const state = "sunny"
+                const state = data.weather[0].main.toLowerCase()
                 const propName = `${city}-${country}`
                 const propValue = { temperature, state }
                 //setAllWeather({ ...allWeather, [propName]: propValue })
                 // otra manera de hacerlo
-                setAllWeather(allWeather => {
-                    const result = { ...allWeather, [propName]: propValue }
-                    return result
-                })
+                setAllWeather(allWeather => ( {...allWeather, [propName]: propValue} ))
                  
             })
         }
