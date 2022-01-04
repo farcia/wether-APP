@@ -7,5 +7,5 @@ export default {
 }
 
 
-export const LunesSoleado = () => (<ForecastItem weekDay={'Lunes'} hour={10} state={'sunny'} temperature={23}/>)
-export const MartesNublado = () => (<ForecastItem weekDay={'Martes'} hour={2} state={'cloud'} temperature={17}/>)
+export const LunesSoleado = () => (<ForecastItem weekDay={'Lunes'} hour={10} state={'clouds'} temperature={23}/>)
+export const MartesNublado = () => (<ForecastItem weekDay={'Martes'} hour={2} state={'clouds'} temperature={17}/>)

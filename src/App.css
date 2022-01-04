@@ -90,3 +90,14 @@ html {-webkit-text-size-adjust: 100%;}  div, section{position: relative; z-index
 .backgroundDark {
     background: linear-gradient(45deg, #010509 0%, #192027 70%, #101b25 100%);
 }
+.contentCenterElement {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 80px;
+    bottom: 0;
+    padding: 30px;
+    margin: auto;
+    max-width: 620px;
+    max-height: calc(100vh - 160px);
+}

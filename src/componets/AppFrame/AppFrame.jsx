@@ -13,21 +13,20 @@ import PropTypes from 'prop-types'
 
 const AppFrame = ({ children }) => {
     return (
-        <Grid container justifyContent='center' alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center'>
             <AppBar position='static'>
                 <Toolbar variant='dense'>
-                    <IconButton color='#ffffff' arial-label='menu'>
+                    <IconButton arial-label='menu'>
                         <Link 
                             component={LinkRouter}
                             to="/Main" 
-                            color='#ffffff' 
                             arial-label='menu'>
-                            <IconContext.Provider value={{size:'2em'}}>
+                            <IconContext.Provider value={{size:'2em', color: '#ffffff'}}>
                                 <WiDaySunny />
                             </IconContext.Provider>
                         </Link>
                     </IconButton>
-                    <Typography variant="h6" color="#000000">
+                    <Typography variant="h6" value={{color: '#ffffff'}}>
                         Weather App
                     </Typography>
                 </Toolbar>

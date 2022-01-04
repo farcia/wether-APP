@@ -7,10 +7,10 @@ import AppFrame from './../componets/AppFrame/'
 
 
 const cities = [
-    { city: "Buenos aires", country: "Argentina" },
-    { city: "Caracas", country: "Venezuela"} ,
-    { city: "Bogotá", country: "Colombia" },
-    { city: "Lima", country: "Perú" }
+    { city: "Buenos Aires", country: "Argentina", countryCode: "AR"},
+    { city: "Caracas", country: "Venezuela", countryCode: "VE"} ,
+    { city: "Bogotá", country: "Colombia", countryCode: "CO"},
+    { city: "Ciudad de México", country: "México", countryCode: "MX"}
 ]
 
 const MainPage = () => {
@@ -21,7 +21,7 @@ const MainPage = () => {
     }
     return (
         <AppFrame>
-            <Paper elevation={4}>
+            <Paper elevation={4} className="contentCenterElement">
                 <CityList cities={cities} onClickCity={onClickHandler} />
             </Paper>
         </AppFrame>

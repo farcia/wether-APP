@@ -9,10 +9,10 @@ import IconState, { validValues } from './../IconState'
 const Weather = ({ temperature, state }) => {
     return (
         <Grid container item justifyContent="center" alignItems="center" spacing={1} direction="row">
-            <IconContext.Provider value={{ size: '6em' }}>
+            <IconContext.Provider value={{ size: '3em' }}>
                 <IconState state={state}/>
             </IconContext.Provider> 
-            <Typography display="inline" variant="h2">{temperature}</Typography>
+            <Typography display="inline" variant="h5">{temperature}</Typography>
         </Grid>
     )
 }
