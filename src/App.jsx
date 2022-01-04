@@ -1,12 +1,12 @@
 import React from 'react'
-import './App.css'
 import { BrowserRouter as Ruter, Switch, Route } from 'react-router-dom'
 import WelcomePage from './pages/WelcomePage'
 import MainPage from './pages/MainPage'
 import CityPage from './pages/CityPage'
 import Error404 from './pages/Error404'
+import './App.css'
 
-import Grid from '@material-ui/core/Grid'
+
 
 const App = () => {
     return (

@@ -5,7 +5,6 @@ import Weather from './../componets/Weather'
 import WeatherDetails from './../componets/WeatherDetails'
 import ForecastChart from './../componets/ForecastChart'
 import Forecast from './../componets/Forecast'
-import { Link } from 'react-router-dom'
 import AppFrame from './../componets/AppFrame/'
 
 const CityPage = () => {
